@@ -1,0 +1,17 @@
+table{
+  border-collapse: collapse;
+}
+td{
+  width: 55px;
+  height: 35px;
+  text-align: center;
+  background: yellow;
+  border: 1px solid black;
+  font-size: 14px;
+}
+.b1{
+  background: #9bbd84;
+}
+.b2{
+  background: #e6a676;
+}
