@@ -1,0 +1,103 @@
+body {
+    background-color: #C9A5AA;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0 0 16px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+main {
+    margin: 16px 0 0 0;
+}
+
+.main-section {
+    width: 800px;
+    margin: 64px auto;
+}
+
+ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.nav-section {
+    background-color: #F4D3D3;
+    border-radius: 8px;
+}
+
+ul {
+    text-align: center;
+}
+
+header {
+    background-color: #E9E9E9;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.about-section {
+    background-color: #FFFFFF;
+    padding: 30px 50px;
+    margin: 0;
+    margin-top: 16px;
+    border-radius: 12px;
+}
+
+.about-image-container {
+    padding: 35px 30px 15px 30px;
+    background-color: #F4D3D3;
+    border-radius: 12px;
+}
+
+img {
+    width: 640px;
+    height: 370px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px 20px 0 20px;
+    font-style: italic;
+}
+
+.about-text-container {
+    margin: 16px 0 0 0;
+}
+
+.about-list-container ol li {
+    margin: 10px;
+    border-bottom: 1px solid #a3868a;
+    list-style: none;
+    padding: 10px;
+}
+
+.about-list-container ol li:nth-child(even) {
+    background-color: #C9A5AA;
+}
+
+.about-list-container ol li:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.about-list-container ol li:nth-child(1) {
+    background-color: #FCF5E9;
+}
+
+.about-list-container ol li:last-child {
+    border-bottom: none;
+}
