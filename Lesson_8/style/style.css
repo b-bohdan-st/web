@@ -7,6 +7,10 @@
     font-family: "Montserrat";
 }
 
+body {
+    padding-top: 65px;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,9 +24,9 @@
     display: inline-block;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+nav ul {
+    display: flex;
+    gap: 30px;
 }
 
 nav ul li a:hover {
@@ -31,6 +35,7 @@ nav ul li a:hover {
 
 nav ul li a {
     font-size: 14px;
+    font-weight: 500;
     color: #535353;
 }
 
@@ -39,7 +44,19 @@ a {
 }
 
 header {
-    padding: 15px 0;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(238, 238, 238, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header-button svg {
+    color: #333;
 }
 
 .header-button button {
@@ -62,18 +79,14 @@ header {
 
 .logo-text {
     color: #535353;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .logo a {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-nav {
-    margin-left: 20px;
 }
 
 main {
@@ -90,7 +103,7 @@ main {
     width: 100%;
     text-align: center;
     padding: 150px 0;
-    background: linear-gradient(#bf49ec, #e740b2);
+    background: linear-gradient(160deg, #9019e5, #e837a7, #ff8810);
     color: white;
     align-items: center;
     flex-direction: column;
@@ -98,24 +111,23 @@ main {
     display: flex;
 }
 
-.main-top h1 {
+.main-wrapper > *:not(:first-child) {
+    padding-top: 25px;
+}
+
+.main-top-text h1 {
     font-size: 56px;
     line-height: 1.2;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.main-top p {
+.main-top-text p {
     margin-top: 20px;
     font-size: 18px;
 }
 
-.main-bottom {
-    display: flex;
-    gap: 20px;
-}
-
-.main-bottom button{
+.main-top-buttons button {
     border: none;
     background: #ffffff;
     color: #9537b9;
@@ -125,7 +137,7 @@ main {
     border-radius: 7px;
 }
 
-.main-bottom button:hover{
+.main-top-buttons button:hover {
     background-color: #ebebeb;
 }
 
@@ -139,17 +151,370 @@ main .wrapper {
 .preference {
     width: 100%;
     display: flex;
-    gap: 100px;
+    flex-direction: row;
     background-color: #f7f9fa;
     color: black;
-    justify-content: center;   
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.preference > *:not(:first-child) {
+    margin-left: 100px;
 }
 
 svg {
-    color: #9810fa;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
     background-color: #f3e8ff;
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon-circle svg {
+    width: 32px;
+    height: 32px;
+    color: #9810fa;
+    background-color: transparent;
+    padding: 0;
+}
+
+.preference-card > *:not(:first-child) {
+    padding-top: 10px;
+}
+
+.preference-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.products {
+    width: 100%;
+    padding: 50px 20px;
+    color: black;
+    background: white;
+}
+
+.products h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.products > p {
+    font-size: 15px;
+    color: #777;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0 0;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 350px;
+    height: 550px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+.type {
+    color: #9810fa;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.product-inf {
+    padding: 50px 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+
+.product-inf h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-inf p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.product-inf > *:not(:first-child) {
+    margin-top: 15px;
+}
+
+.stock {
+    color: #659d67;
+    font-size: 13px;
+}
+
+.add-to-cart {
+    border: none;
+    background: #9810fa;
+    color: white;
     padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    margin: 15px;
+}
+
+.add-to-cart svg {
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: transparent;
+    padding: 0;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(180deg, #8a10d4, #6500b8);
+}
+
+.price-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.show-all-products {
+    border: none;
+    background: #9810fa;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    margin-top: 35px;
+}
+
+.meet-us {
+    background: #9810fa;
+    width: 100%;
+    height: 220px;
+}
+
+.call-us {
+    color: #9810fa;
+    background-color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.meet-us h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.meet-us > *:not(:first-child) {
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #101727;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #1f2a44;
+    padding-top: 30px;
+}
+
+.foot-logo-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.footer-container > div {
+    flex: 1;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer hr {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #1f2a44;
+}
+
+.foot-info {
+    width: 250px;
+}
+
+.foot-info p {
+    margin: 15px 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.links svg {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.links svg:hover {
+    color: #c780fa;
+    transition: color 0.4s ease;
+}
+
+.foot-contacts div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.foot-contacts span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.rights-reserved {
+    display: block;
+    text-align: center;
+    padding: 20px 0 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.foot-fast-lnks ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.foot-fast-lnks ul li a:hover {
+    color: #c780fa;
+    transition: color 0.4s ease;
+}
+
+.foot-categories ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.foot-categories ul li a:hover {
+    color: #c780fa;
+    transition: color 0.4s ease;
+}
+
+.cart-btn {
+    width: 35px;
+    height: 35px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.cart-btn svg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cart-btn:hover {
+    background-color: #dbdbdb;
+}
+
+.search-btn {
+    width: 35px;
+    height: 35px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.search-btn svg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.search-btn:hover {
+    background-color: #dbdbdb;
 }
