@@ -353,6 +353,11 @@ svg {
     font-weight: 500;
 }
 
+.call-us:hover {
+    cursor: pointer;
+    background-color: #dfdfdf;
+}
+
 .meet-us h2 {
     font-size: 30px;
     margin-top: 50px;
