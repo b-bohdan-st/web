@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e8efff;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo-img {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.logo-txt {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4f39f6;
+}
+
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #000;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4f39f6;
+}
+
+nav ul li a:visited {
+    color: #000;
+}
+
+.enroll-btn {
+    background-color: #4f39f6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 26px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+}
+
+.enroll-btn:hover {
+    background-color: #432dd7;
+}
+
+.main-top {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.main-top-info > p {
+    margin-top: 5px;
+}
+
+.main-top-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main-top-info p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 26px;
+}
+
+.begin {
+    background-color: #4f39f6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 25px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+}
+
+.learn-more {
+    background-color: #fff;
+    color: #4f39f6;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 25px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #4f39f6;
+}
