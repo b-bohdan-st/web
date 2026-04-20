@@ -1,0 +1,335 @@
+body {
+    background-color: #C9A5AA;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+footer {
+    background-color: #F4D3D3;
+    padding: 1.5rem 0;
+    text-align: left;
+    width: calc(100% + 2rem);
+    margin: 1.875rem -1rem 0 -1rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+@media (min-width: 0rem) and (max-width: 49.5625rem) {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 0 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        margin-top: 0.5rem;
+    }
+
+    main {
+        margin: 1rem 0 0 0;
+    }
+
+    .main-section {
+        margin: 0.75rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    ul li {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-section-text {
+        font-family: "Arial Black", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: "Arimo", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #006EBE;
+        line-height: 1.3125rem;
+        transition: background 0.3s ease;
+        width: auto;
+        height: 33px;
+        padding: 0 1rem;
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.5);
+        color: #5EAAE0;
+    }
+
+    nav ul li a:visited {
+        color: #0B257D;
+    }
+
+    .nav-section {
+        background-color: #F4D3D3;
+        border-radius: 0.5rem;
+    }
+
+    header {
+        background-color: #E9E9E9;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-family: "Arimo", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .about-section {
+        background-color: #FFFFFF;
+        padding: 1.875rem 1rem 0 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        border-radius: 0.75rem;
+    }
+
+    .about-image-container {
+        background-color: #F4D3D3;
+        border-radius: 0.75rem;
+        margin: 0;
+        padding-bottom: 0.625rem;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        margin: 0.625rem auto;
+        font-style: italic;
+    }
+
+    .about-text-container {
+        margin: 1rem 0 0 0;
+    }
+
+    .about-list-container ol {
+        padding: 0;
+    }
+
+    .about-list-container ol li {
+        border-bottom: 0.0625rem solid #a3868a;
+        list-style: none;
+        padding: 0.625rem;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .about-list-container ol li:nth-child(even) {
+        background-color: #C9A5AA;
+    }
+
+    .about-list-container ol li:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    .about-list-container ol li:nth-child(1) {
+        background-color: #FCF5E9;
+    }
+
+    .about-list-container ol li:last-child {
+        border-bottom: none;
+    }
+
+    footer span {
+        font-family: "Arimo", sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        text-align: start;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 49.5625rem) and (max-width: 75rem) {
+    h1 {
+        font-size: 42px;
+        font-weight: 700;
+        margin: 0 0 1rem 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.125rem;
+        margin-top: 0.5rem;
+    }
+
+    main {
+        margin: 1rem 0 0 0;
+    }
+
+    .main-section {
+        margin: 0.75rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 3px;
+    }
+
+    ul li {
+        display: block;
+        width: auto;
+    }
+
+    .nav-section-text {
+        display: none;
+    }
+
+    nav ul li a {
+        background-color: #F4D3D3;
+        transition: 0.3s background ease;
+        width: 100%;
+        font-family: "Arimo";
+        font-size: 14px;
+        line-height: 21px;
+        margin: 6px 10px;
+        text-decoration: none;
+        color: #006EBE;
+    }
+
+    nav ul li a:hover {
+        color: #5EAAE0;
+        background-color: #fff;
+    }
+
+    nav ul li a:visited {
+        color: #0B257D;
+    }
+
+    .nav-section {
+        background-color: #F4D3D3;
+        border-radius: 0.5rem;
+        max-width: 358px;
+    }
+
+    header {
+        background-color: #E9E9E9;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-family: "Arimo", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .about-section {
+        background-color: #FFFFFF;
+        padding: 1.875rem 1rem 0 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+    }
+
+    .about-image-container {
+        background-color: #F4D3D3;
+        border-radius: 0.75rem;
+        padding: 20px 30px 0 30px;
+        margin: 0;
+        padding-bottom: 0.625rem;
+    }
+
+    .about-image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.5rem;
+        margin: 0;
+    }
+
+    figcaption {
+        text-align: center;
+        margin: 0.625rem auto 0 auto;
+        font-style: italic;
+    }
+
+    .about-text-container {
+        margin: 1rem 0 0 0;
+    }
+
+    .about-list-container ol {
+        padding: 0;
+    }
+
+    .about-list-container ol li {
+        border-bottom: 0.0625rem solid #a3868a;
+        list-style: none;
+        padding: 0.625rem;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .about-list-container ol li:nth-child(even) {
+        background-color: #C9A5AA;
+    }
+
+    .about-list-container ol li:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    .about-list-container ol li:nth-child(1) {
+        background-color: #FCF5E9;
+    }
+
+    .about-list-container ol li:last-child {
+        border-bottom: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer span {
+        font-family: "Arimo", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
