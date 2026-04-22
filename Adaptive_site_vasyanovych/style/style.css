@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap');
+
 body {
     background-color: #C9A5AA;
     font-family: Verdana, sans-serif;
@@ -11,7 +15,6 @@ body {
 footer {
     background-color: #F4D3D3;
     padding: 1.5rem 0;
-    text-align: left;
     width: calc(100% + 2rem);
     margin: 1.875rem -1rem 0 -1rem;
     border-radius: 0 0 0.75rem 0.75rem;
@@ -57,8 +60,6 @@ footer {
     ul li {
         display: block;
         width: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     .nav-section-text {
@@ -69,20 +70,16 @@ footer {
     }
 
     nav ul li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
         text-decoration: none;
         font-family: "Arimo", sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
         color: #006EBE;
         line-height: 1.3125rem;
         transition: background 0.3s ease;
-        width: auto;
-        height: 33px;
-        padding: 0 1rem;
-        background: rgba(255, 255, 255, 0.4);
+        width: 100%;
+        text-align: center;
     }
 
     nav ul li a:hover {
@@ -147,7 +144,7 @@ footer {
         border-bottom: 0.0625rem solid #a3868a;
         list-style: none;
         padding: 0.625rem;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
     }
 
@@ -167,30 +164,33 @@ footer {
         border-bottom: none;
     }
 
+    footer {
+        text-align: left;
+    }
+
     footer span {
         font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 0.75rem;
-        text-align: start;
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
 }
 
 @media (min-width: 49.5625rem) and (max-width: 75rem) {
     h1 {
-        font-size: 42px;
+        font-size: 2.625rem;
         font-weight: 700;
         margin: 0 0 1rem 0;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
         margin: 0;
     }
 
     p {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.125rem;
         margin-top: 0.5rem;
     }
@@ -199,8 +199,33 @@ footer {
         margin: 1rem 0 0 0;
     }
 
+    .article-link {
+        text-decoration: none;
+        color: #006EBE;
+        transition: color 0.3s ease;
+    }
+    
+    .article-link:visited {
+        color: #0B257D;
+    }
+
+    .article-link:hover {
+        color: #5EAAE0;
+    }
+
     .main-section {
-        margin: 0.75rem;
+        margin: 1.5rem auto;
+        max-width: 42.5rem;
+    }
+
+    .nav-section-text {
+        display: none;
+    }
+
+    .nav-section {
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0.75rem 0;
     }
 
     ul {
@@ -208,10 +233,13 @@ footer {
         justify-content: flex-start;
         align-items: center;
         flex-direction: row;
-        margin: 0;
         padding: 0;
+        margin: 0;
         list-style: none;
-        gap: 3px;
+        gap: 0;
+        border-radius: 1.5rem;
+        width: fit-content;
+        background-color: #F4D3D3;
     }
 
     ul li {
@@ -219,35 +247,36 @@ footer {
         width: auto;
     }
 
-    .nav-section-text {
-        display: none;
-    }
-
     nav ul li a {
-        background-color: #F4D3D3;
-        transition: 0.3s background ease;
-        width: 100%;
-        font-family: "Arimo";
-        font-size: 14px;
-        line-height: 21px;
-        margin: 6px 10px;
+        display: block;
         text-decoration: none;
+        font-family: "Arimo", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
         color: #006EBE;
+        background-color: #F4D3D3;
+        padding: 0.375rem 1rem;
+        line-height: 1.3125rem;
+        transition: background 0.3s ease, color 0.3s ease;
+        white-space: nowrap;
+        border-radius: 0.25rem;
     }
 
-    nav ul li a:hover {
-        color: #5EAAE0;
-        background-color: #fff;
+    nav ul li:first-child a {
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    nav ul li:last-child a {
+        border-radius: 0 1.5rem 1.5rem 0;
     }
 
     nav ul li a:visited {
         color: #0B257D;
     }
 
-    .nav-section {
-        background-color: #F4D3D3;
-        border-radius: 0.5rem;
-        max-width: 358px;
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.8);
+        color: #5EAAE0;
     }
 
     header {
@@ -271,9 +300,8 @@ footer {
     .about-image-container {
         background-color: #F4D3D3;
         border-radius: 0.75rem;
-        padding: 20px 30px 0 30px;
+        padding: 1.25rem 1.875rem 0.625rem 1.875rem;
         margin: 0;
-        padding-bottom: 0.625rem;
     }
 
     .about-image-container img {
@@ -302,7 +330,7 @@ footer {
         border-bottom: 0.0625rem solid #a3868a;
         list-style: none;
         padding: 0.625rem;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
     }
 
@@ -327,9 +355,196 @@ footer {
     }
 
     footer span {
-        font-family: "Arimo", sans-serif;
+        font-family: "Allerta", sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    h1 {
+        font-size: 2.625rem;
+        font-weight: 700;
+        margin: 0 0 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        margin-top: 0.5rem;
+    }
+
+    main {
+        margin: 1rem 0 0 0;
+    }
+
+    .article-link {
+        text-decoration: none;
+        color: #006EBE;
+        transition: color 0.3s ease;
+    }
+
+    .article-link:visited {
+        color: #0B257D;
+    }
+
+    .article-link:hover {
+        color: #5EAAE0;
+    }
+
+    .main-section {
+        margin: 4rem auto;
+        max-width: 50rem;
+    }
+
+    .nav-section-text {
+        display: none;
+    }
+
+    .nav-section {
+        background-color: #F4D3D3;
+        padding: 0.75rem 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 0.5rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        gap: 0;
+        border-radius: 1.5rem;
+        background-color: #F4D3D3;
+        width: fit-content;
+        overflow: hidden;
+    }
+    
+    ul li {
+        display: block;
+        width: auto;
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        font-family: "Arimo", sans-serif;
+        font-size: 0.875rem;
+        color: #006EBE;
+        padding: 0.375rem 1rem;
+        background-color: #F4D3D3;
+        white-space: nowrap;
+        transition: 0.3s;
+        border-radius: 0.3rem;
+    }
+
+    nav ul li:first-child a {
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    nav ul li:last-child a {
+        border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+    nav ul li a:visited {
+        color: #0B257D;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.8);
+        color: #5EAAE0;
+    }
+
+    header {
+        background-color: #E9E9E9;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-family: "Arimo", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .about-section {
+        background-color: #FFFFFF;
+        padding: 1.875rem 1rem 0 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+    }
+
+    .about-image-container {
+        background-color: #F4D3D3;
+        border-radius: 0.75rem;
+        padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+        margin: 0;
+    }
+
+    .about-image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.5rem;
+        margin: 0;
+    }
+
+    figcaption {
+        text-align: center;
+        margin: 0.625rem auto 0 auto;
+        font-style: italic;
+    }
+
+    .about-text-container {
+        margin: 1rem 0 0 0;
+    }
+
+    .about-list-container ol {
+        padding: 0;
+    }
+
+    .about-list-container ol li {
+        border-bottom: 0.0625rem solid #a3868a;
+        list-style: none;
+        padding: 0.625rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .about-list-container ol li:nth-child(even) {
+        background-color: #C9A5AA;
+    }
+
+    .about-list-container ol li:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    .about-list-container ol li:nth-child(1) {
+        background-color: #FCF5E9;
+    }
+
+    .about-list-container ol li:last-child {
+        border-bottom: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer span {
+        font-family: "Akshar", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
     }
 }
