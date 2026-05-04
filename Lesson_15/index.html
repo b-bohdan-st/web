@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="hero">
+            <h1>Форма прийому на роботу</h1>
+            <p class="p-name">ІТ Компанія "TechInnovate"</p>
+            <p class="p-desc">Поля позначені синьою лінією є обов'язковими для заповнення</p>
+        </header>
+        <main>
+            <form action="send">
+                <article class="info-container">
+                    <h2>Персональні дані</h2>
+                    <div class="info-block">
+                        <div class="info">
+                            <label>
+                                Ім'я *<br>
+                                <input type="text" name="name" placeholder="Введіть ваше ім'я" required>
+                            </label>
+                        </div>
+                        <div class="info">
+                            <label>
+                                Прізвище *<br>
+                                <input type="text" name="surname" placeholder="Введіть ваше прізвище" required>
+                            </label>
+                        </div>
+                        <div class="info">
+                            <label>
+                                Email *<br>
+                                <input type="email" name="email" placeholder="example@email.com" required>
+                            </label>
+                        </div>
+                        <div class="info">
+                            <label>
+                                Телефон *<br>
+                                <input type="tel" name="phone" placeholder="+380 XX XXX XX XX" required>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+                <article class="info-container">
+                    <h2>Професійна інформація</h2>
+                    <div class="info-block">
+                        <div class="choose-block">
+                            <label>
+                                Бажана позиція *<br>
+                                <select name="occupation" id="occupation" required>
+                                    <option value="">Оберіть позицію</option>
+                                    <option value="frontend">Frontend Developer</option>
+                                    <option value="backend">Backend Developer</option>
+                                    <option value="fullstack">Full Stack Developer</option>
+                                    <option value="devops">DevOps Engineer</option>
+                                    <option value="qa">QA Engineer</option>
+                                    <option value="ui-ux">UI/UX Designer</option>
+                                    <option value="mobile">Mobile Developer</option>
+                                    <option value="data">Data Scientist</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="info">
+                            <label>
+                                Досвід роботи (років) *<br>
+                                <input type="number" name="age" placeholder="0-50" min="0" max="50" required>
+                            </label>
+                        </div>
+                        <div class="info width100">
+                            <label>
+                                Технології та навички *<br>
+                                <input type="number" name="skills" placeholder="React, TypeScript, Node.js, Python..." required>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+                <article class="info-container">
+                    <h2>Професійна інформація</h2>
+                    <div class="info-block">
+                        <div class="add-info-block">
+                            <label class="additional-info">
+                                GitHub профіль<br>
+                                <input type="text" name="github" placeholder="https://github.com/username">
+                            </label>
+                            <label class="additional-info">
+                                Портфоліо<br>
+                                <input type="text" name="portfolio" placeholder="https://yourportfolio.com">
+                            </label>
+                        </div>
+                        <div class="file">
+                            <label class="file">
+                                Резюме (PDF, DOC) *<br>
+                                <input type="file" name="file" id="file" required>
+                            </label>
+                        </div>
+                        <div class="add-info-block">
+                            <label class="additional-info">
+                                Коротко про себе *<br>
+                                <textarea type="text" name="about-info" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)" required></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+                <article class="agree">
+                    <input type="checkbox" name="agree" required>Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною *
+                </article>
+                <button type="submit">Надіслати заявку</button>
+            </form>
+        </main>
+        <footer>
+            <div class="foot-info">
+                <h3>💡 Підказки по заповненню:</h3>
+                <p>✓ Зелена рамка — поле заповнено правильно</p>
+                <p>✗ Червона рамка — поле заповнено неправильно</p>
+                <p>→ Синя лінія зліва — обов'язкове поле</p>
+                <p>↗ Наведіть курсор на поле для ефекту підсвічування</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
