@@ -21,25 +21,25 @@
                     <div class="info-block">
                         <div class="info">
                             <label>
-                                Ім'я *<br>
+                                <span class="label-unique">Ім'я *</span><br>
                                 <input type="text" name="name" placeholder="Введіть ваше ім'я" required>
                             </label>
                         </div>
                         <div class="info">
                             <label>
-                                Прізвище *<br>
+                                <span class="label-unique">Прізвище *</span><br>
                                 <input type="text" name="surname" placeholder="Введіть ваше прізвище" required>
                             </label>
                         </div>
                         <div class="info">
                             <label>
-                                Email *<br>
+                                <span class="label-unique">Email *</span><br>
                                 <input type="email" name="email" placeholder="example@email.com" required>
                             </label>
                         </div>
                         <div class="info">
                             <label>
-                                Телефон *<br>
+                                <span class="label-unique">Телефон *</span><br>
                                 <input type="tel" name="phone" placeholder="+380 XX XXX XX XX" required>
                             </label>
                         </div>
@@ -50,7 +50,7 @@
                     <div class="info-block">
                         <div class="choose-block">
                             <label>
-                                Бажана позиція *<br>
+                                <span class="label-unique">Бажана позиція *</span><br>
                                 <select name="occupation" id="occupation" required>
                                     <option value="">Оберіть позицію</option>
                                     <option value="frontend">Frontend Developer</option>
@@ -66,14 +66,14 @@
                         </div>
                         <div class="info">
                             <label>
-                                Досвід роботи (років) *<br>
+                                <span class="label-unique">Досвід роботи (років) *</span><br>
                                 <input type="number" name="age" placeholder="0-50" min="0" max="50" required>
                             </label>
                         </div>
                         <div class="info width100">
                             <label>
-                                Технології та навички *<br>
-                                <input type="number" name="skills" placeholder="React, TypeScript, Node.js, Python..." required>
+                                <span class="label-unique">Технології та навички *</span><br>
+                                <input type="text" name="skills" placeholder="React, TypeScript, Node.js, Python..." required>
                             </label>
                         </div>
                     </div>
@@ -83,34 +83,36 @@
                     <div class="info-block">
                         <div class="add-info-block">
                             <label class="additional-info">
-                                GitHub профіль<br>
+                                <span class="label-unique">GitHub профіль</span><br>
                                 <input type="text" name="github" placeholder="https://github.com/username">
                             </label>
                             <label class="additional-info">
-                                Портфоліо<br>
+                                <span class="label-unique">Портфоліо</span><br>
                                 <input type="text" name="portfolio" placeholder="https://yourportfolio.com">
                             </label>
                         </div>
-                        <div class="file">
-                            <label class="file">
-                                Резюме (PDF, DOC) *<br>
+                        <div class="file width100">
+                            <label class="file-label">
+                                <span class="label-unique">Резюме (PDF, DOC) *</span><br>
                                 <input type="file" name="file" id="file" required>
                             </label>
                         </div>
-                        <div class="add-info-block">
+                        <div class="add-info-block width100">
                             <label class="additional-info">
-                                Коротко про себе *<br>
-                                <textarea type="text" name="about-info" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)" required></textarea>
+                                <span class="label-unique">Коротко про себе *</span><br>
+                                <textarea name="about-info" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)" required></textarea>
                             </label>
                         </div>
                     </div>
                 </article>
                 <article class="agree">
-                    <input type="checkbox" name="agree" required>Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною *
+                    <input type="checkbox" name="agree" required>
+                    <span class="label-unique">Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною *</span>
                 </article>
-                <button type="submit">Надіслати заявку</button>
+                <button class="width100" type="submit">Надіслати заявку</button>
             </form>
         </main>
+
         <footer>
             <div class="foot-info">
                 <h3>💡 Підказки по заповненню:</h3>
