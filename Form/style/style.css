@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --body-bg: #fefcda;
+    --form-bg: #ebcbb3;
+    --button-bg-1: #6e00fd;
+    --button-bg-2: #0065fd;
+    --placeholder-color: #888888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.reg-log-form {
+    background: var(--form-bg);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        div {
+            display: flex;
+            margin-top: 16px;
+            align-items: center;
+            button {
+                margin-left: 5px;
+                padding: 5px 10px;
+                background-color: var(--button-bg-2);
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        #btn-submit {
+            margin-left: 5px;
+            padding: 8px 25px;
+            background-color: var(--button-bg-1);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
+
+.form-log-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    .label-2 {
+        margin-top: 16px;
+    }
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        cursor: pointer;
+        .label-name {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        input {
+            padding: 8px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #6e00fd;
+            box-shadow: 0 0 8px rgba(0, 253, 0, 0.507);
+            outline: none;
+        }
+
+        input::placeholder {
+            color: var(--placeholder-color);
+        }
+    }
+}
+
+.login-part,
+.register-part {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.register-part, .login-part {
+    display: none;
+}
+
+.active-form {
+    display: block;
+}
+
+.form-log-pass label:nth-child(n + 2) {
+    margin-top: 16px;
+}
+
+.change-form {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.change-form button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: var(--button-bg-2);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#btn-register {
+    margin-left: 5px;
+    padding: 8px 25px;
+    background-color: var(--button-bg-1);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}

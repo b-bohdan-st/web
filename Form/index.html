@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <form action="/save" class="reg-log-form">
+        <section class="login-part">
+            <section class="form-name">
+                <h1>Вхід до платформи</h1>
+            </section>
+            <section class="form-log-pass">
+                <label class="label-1">
+                    <span class="label-name">Логін *</span>
+                    <input type="text" placeholder="Введіть свій логін" id="login" required>
+                </label>
+                <label class="label-2">
+                    <span class="label-name">Пароль *</span>
+                    <input type="password" placeholder="Введіть свій пароль" id="pass" required>
+                </label>
+            </section>
+            <section class="buttons">
+                <button id="btn-submit" type="submit">Увійти</button>
+                <div class="change-form">
+                    <span class="noacc">Не маєте акаунта? -</span>
+                    <button type="button" id="open-register">Зареєструватися</button>
+                </div>
+            </section>
+        </section>
+        <section class="register-part">
+            <section class="form-name">
+                <h1>Реєстрація</h1>
+            </section>
+            <section class="form-log-pass">
+                <label>
+                    <span class="label-name">Логін *</span>
+                    <input type="text" placeholder="Створіть логін" required>
+                </label>
+                <label>
+                    <span class="label-name">Email *</span>
+                    <input type="email" placeholder="Введіть email" required>
+                </label>
+                <label>
+                    <span class="label-name">Пароль *</span>
+                    <input type="password" placeholder="Створіть пароль" required>
+                </label>
+            </section>
+            <section class="buttons">
+                <button id="btn-register" type="submit">
+                    Зареєструватися
+                </button>
+                <div class="change-form">
+                    <span>Вже маєте акаунт? -</span>
+                    <button type="button" id="open-login">Вхід</button>
+                </div>
+            </section>
+        </section>
+    </form>
+    <script src="script/script.js"></script>
+</body>
+</html>
