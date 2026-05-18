@@ -1,6 +1,6 @@
 function func1() {
     let isAuthorized = prompt("Ви авторизовані на сайті? (Так/Ні)").toLowerCase();
-    let internetSpeed = Number(prompt("Вкажіть вашу шкидкість інтернету: (число Мб/с))"));
+    let internetSpeed = Number(prompt("Вкажіть вашу шкидкість інтернету (число Мб/с):"));
     let isBanned = prompt("Ваш акаунт НЕ заблоковано? (Так/Ні)").toLowerCase();
     let counter = 0;
 
