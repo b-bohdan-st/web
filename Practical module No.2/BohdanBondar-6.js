@@ -1,5 +1,5 @@
 function func6() {
-    let temperature = Number(prompt("Введіть температуру в кімнаті: (у °C)"));
+    let temperature = Number(prompt("Введіть температуру в кімнаті (у °C):"));
     let sensorError = prompt("Чи є помилка датчика? (Так/Ні)").toLowerCase();
     
     if (sensorError === "так") {
